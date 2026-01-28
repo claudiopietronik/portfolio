@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claudio Pietronik | Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <header>
+        <nav>
+            <div class="logo">CP</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <h1 class="glitch" data-text="CLAUDIO PIETRONIK">CLAUDIO PIETRONIK</h1>
+                <h2 class="subtitle">Welcome to My Portfolio</h2>
+                <p class="tagline">Exploring Technology & Innovation</p>
+
+                <div class="hero-icons">
+                    <div class="icon-circle"><i class="fas fa-code"></i></div>
+                    <div class="icon-circle"><i class="fas fa-laptop-code"></i></div>
+                    <div class="icon-circle"><i class="fas fa-rocket"></i></div>
+                </div>
+
+                <div class="role-badge">Data Analyst and AI Full-Stack Developer</div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-image-container">
+                        <div class="hex-border">
+                            <!-- Placeholder for user image if they have one, using a generic tech image for now or just style -->
+                            <div class="about-image-placeholder">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>Software Development & AI Implementation</h3>
+                        <p>Developer specialized in integrating Artificial Intelligence within web architectures. My
+                            background combines foundational knowledge in <strong>Mathematical Analysis and Linear
+                                Algebra</strong> with applied expertise in <strong>Machine Learning, Deep Learning, and
+                                Large Language Models</strong>.</p>
+                        <p>I focus on designing <strong>Agentic Workflows</strong> and building scalable web
+                            applications that leverage predictive models. My work is centered on translating technical
+                            requirements and algorithmic logic into functional, production-ready software solutions.</p>
+
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Machine Learning</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>Web Development</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-robot"></i>
+                                <span>Agentic AI</span>
+                            </div>
+                        </div>
+
+                        <div class="quote-box">
+                            "Integrating mathematical logic with modern web development."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+
+                    <!-- Item 1: Linear Algebra -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-icon"><i class="fas fa-vector-square"></i></div>
+                                <div>
+                                    <h3>Master Linear Algebra</h3>
+                                </div>
+                            </div>
+                            <p>Theory and implementation in code</p>
+                            <a href="https://www.udemy.com/course/linear-algebra-theory-and-implementation/"
+                                target="_blank"
+                                style="display: inline-block; margin-top: 10px; color: var(--secondary); font-size: 0.9rem;"><i
+                                    class="fas fa-external-link-alt"></i> View Course</a>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Calculus 1 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-icon"><i class="fas fa-calculator"></i></div>
+                                <div>
+                                    <h3>Master Calculus 1 using Python</h3>
+                                </div>
+                            </div>
+                            <p>Derivatives and applications</p>
+                            <a href="https://www.udemy.com/course/pycalc1_x/" target="_blank"
+                                style="display: inline-block; margin-top: 10px; color: var(--secondary); font-size: 0.9rem;"><i
+                                    class="fas fa-external-link-alt"></i> View Course</a>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Calculus 2 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-icon"><i class="fas fa-calculator"></i></div>
+                                <div>
+                                    <h3>Master Calculus 2 using Python</h3>
+                                </div>
+                            </div>
+                            <p>Integration, intuition, code</p>
+                            <a href="https://www.udemy.com/course/pycalc2_x/" target="_blank"
+                                style="display: inline-block; margin-top: 10px; color: var(--secondary); font-size: 0.9rem;"><i
+                                    class="fas fa-external-link-alt"></i> View Course</a>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Fourier Transform -->
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-icon"><i class="fas fa-wave-square"></i></div>
+                                <div>
+                                    <h3>Master the Fourier Transform</h3>
+                                </div>
+                            </div>
+                            <p>Fourier transform and its applications</p>
+                            <a href="https://www.udemy.com/course/fourier-transform-mxc/" target="_blank"
+                                style="display: inline-block; margin-top: 10px; color: var(--secondary); font-size: 0.9rem;"><i
+                                    class="fas fa-external-link-alt"></i> View Course</a>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Item 5: Deep Learning -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-icon"><i class="fas fa-brain"></i></div>
+                                <div>
+                                    <h3>A Deep Understanding of Deep Learning</h3>
+                                </div>
+                            </div>
+                            <p>Neural networks, CSNs, ANNs, Autoencoders, and more.</p>
+                            <a href="https://www.udemy.com/course/deeplearning_x/" target="_blank"
+                                style="display: inline-block; margin-top: 10px; color: var(--secondary); font-size: 0.9rem;"><i
+                                    class="fas fa-external-link-alt"></i> View Course</a>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: Profession AI -->
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                                <div>
+                                    <h3>Master in Data Analytics</h3>
+                                    <span class="company"
+                                        style="display:block; font-size: 0.9em; color: var(--text-muted); margin-bottom: 5px;">Profession
+                                        AI</span>
+                                </div>
+                            </div>
+                            <p>Advanced data analytics and machine learning</p>
+                            <a href="https://www.profession.ai/corsi/master-data-analytics/" target="_blank"
+                                style="display: inline-block; margin-top: 10px; color: var(--secondary); font-size: 0.9rem;"><i
+                                    class="fas fa-external-link-alt"></i> View Course</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="tech-stack" class="section">
+            <div class="container">
+                <h2 class="section-title">Tech Stack</h2>
+                <div class="tech-grid">
+                    <!-- Programming Languages -->
+                    <div class="tech-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>Python</span><span>95%</span></div>
+                            <div class="bar-bg">
+                                <div class="bar-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>JavaScript</span><span>90%</span></div>
+                            <div class="bar-bg">
+                                <div class="bar-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>HTML5/CSS3</span><span>90%</span></div>
+                            <div class="bar-bg">
+                                <div class="bar-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks & Web -->
+                    <div class="tech-category">
+                        <h3>Frameworks & Web</h3>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>Docker</span><span>80%</span></div>
+                            <div class="bar-bg">
+                                <div class="bar-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>React/Next.js</span><span>85%</span></div>
+                            <div class="bar-bg">
+                                <div class="bar-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data & Analysis -->
+                    <div class="tech-category">
+                        <h3>Data & Analysis</h3>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>Excel (VBA/Power Query)</span><span>95%</span></div>
+                            <div class="bar-bg">
+                                <div class="bar-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>SQL (MySQL/MariaDB)</span><span>85%</span></div>
+                            <div class="bar-bg">
+                                <div class="bar-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>Power BI / Tableau</span><span>80%</span></div>
+                            <div class="bar-bg">
+                                <div class="bar-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI & Automation -->
+                    <div class="tech-category">
+                        <h3>AI & Automation</h3>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>n8n & Agentic Workflows</span><span>85%</span></div>
+                            <div class="bar-bg">
+                                <div class="bar-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>Machine & Deep Learning</span><span>85%</span></div>
+                            <div class="bar-bg">
+                                <div class="bar-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info"><span>Big Data (Spark/AWS)</span><span>75%</span></div>
+                            <div class="bar-bg">
+                                <div class="bar-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content" style="text-align: center;">
+                    <p style="color: var(--text-muted); margin-bottom: 30px; font-size: 1.1rem;">Ready to collaborate on
+                        innovative AI and software solutions?</p>
+
+                    <div class="contact-details"
+                        style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+                        <div class="contact-item"
+                            style="display: flex; align-items: center; gap: 10px; padding: 15px 25px; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--primary); border-radius: 8px; color: white;">
+                            <i class="fas fa-envelope" style="color: var(--secondary); font-size: 1.2rem;"></i>
+                            <span>pietronikclaudio@gmail.com</span>
+                        </div>
+
+                        <div class="contact-item"
+                            style="display: flex; align-items: center; gap: 10px; padding: 15px 25px; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--primary); border-radius: 8px; color: white;">
+                            <i class="fas fa-phone" style="color: var(--secondary); font-size: 1.2rem;"></i>
+                            <span>+39 349 675 7953</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Claudio Pietronik. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/background.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
