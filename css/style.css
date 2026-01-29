@@ -19,11 +19,18 @@
     box-sizing: border-box;
 }
 
+html,
 body {
     font-family: var(--font-heading);
     background-color: var(--bg-dark);
     color: var(--text-main);
     overflow-x: hidden;
+    /* Prevent horizontal scroll */
+    max-width: 100%;
+    width: 100vw;
+    /* Forced width */
+    position: relative;
+    /* Context stacking */
     line-height: 1.6;
 }
 
@@ -58,8 +65,20 @@ ul {
 
 .container {
     max-width: 1200px;
+    width: 100%;
+    /* Ensure fluid width */
     margin: 0 auto;
     padding: 0 20px;
+    box-sizing: border-box;
+    /* Explicitly set as requested */
+}
+
+/* Global responsive safeguards */
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
 }
 
 .section {
@@ -574,32 +593,92 @@ footer {
         flex-direction: row;
     }
 
-    /* Narrower mobile layout */
     .container {
         padding: 0 20px;
-        /* Revert to 20px to fix centering issues of other sections */
+        width: 100%;
     }
 
-    /* Shorten tech stack bars on mobile and fix overflow */
+    /* FORCE RESET for About Section and general safety */
+    #about,
+    .section {
+        max-width: 100% !important;
+        width: 100%;
+        overflow: hidden !important;
+        /* Cut off any overflow */
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        box-sizing: border-box;
+    }
+
+    /* Typography fixes - Strict breaking */
+    h1,
+    h2,
+    h3,
+    p,
+    .section-title,
+    .about-text {
+        white-space: normal;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        max-width: 100%;
+    }
+
+    /* Reduce font sizes slightly to help fit */
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    /* About Section Grid Reset */
+    .about-grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* Ensure wrapping */
+        width: 100%;
+        margin: 0;
+        gap: 30px;
+    }
+
+    .about-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Fix fixed width hex-border */
+    .hex-border {
+        width: 100%;
+        max-width: 250px;
+        /* Reduced further for safety */
+        min-width: 0;
+        /* Override any defaults */
+        height: auto;
+        aspect-ratio: 1/1;
+        margin: 0 auto;
+    }
+
+    .about-image-placeholder {
+        font-size: 3rem;
+    }
+
+    /* Skill bars safety */
     .tech-grid {
         display: flex;
-        /* Switch to flex to avoid grid minmax overflow issues */
         flex-direction: column;
         gap: 30px;
         width: 100%;
     }
 
     .skill-bar {
-        width: 85%;
-        /* Set to a safe, aesthetic width */
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 300px;
-        /* Ensure they never get too wide on small tablets in this view */
+        width: 100% !important;
+        max-width: 100%;
+        margin: 0;
+        box-sizing: border-box;
     }
 
-    /* Fix potential overflow in Projects grid too */
+    /* Projects grid safety */
     .projects-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 }
