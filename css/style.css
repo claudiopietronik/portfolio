@@ -573,4 +573,33 @@ footer {
     .timeline-item.left .timeline-header {
         flex-direction: row;
     }
+
+    /* Narrower mobile layout */
+    .container {
+        padding: 0 20px;
+        /* Revert to 20px to fix centering issues of other sections */
+    }
+
+    /* Shorten tech stack bars on mobile and fix overflow */
+    .tech-grid {
+        display: flex;
+        /* Switch to flex to avoid grid minmax overflow issues */
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .skill-bar {
+        width: 85%;
+        /* Set to a safe, aesthetic width */
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 300px;
+        /* Ensure they never get too wide on small tablets in this view */
+    }
+
+    /* Fix potential overflow in Projects grid too */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 }
